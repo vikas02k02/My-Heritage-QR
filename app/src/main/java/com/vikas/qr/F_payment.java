@@ -20,8 +20,8 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 public class F_payment extends Fragment {
     Button btn;
-    TextView BookMessege,data;
-    ImageView img ,Iv_ticket;
+    TextView BookMessage,data;
+    ImageView img ;
 
 
 
@@ -43,7 +43,7 @@ public class F_payment extends Fragment {
         btn =view.findViewById(R.id.btn_pay);
         img = view.findViewById(R.id.iv_ticket);
         data=view.findViewById(R.id.totalCost);
-        BookMessege=view.findViewById(R.id.tv_bookMessege);
+        BookMessage=view.findViewById(R.id.tv_bookMessege);
 
         assert getArguments() != null;
         String str =getArguments().getString("new");
@@ -58,8 +58,7 @@ public class F_payment extends Fragment {
                 BarcodeEncoder mEncoder = new BarcodeEncoder();
                 Bitmap mBitmap = mEncoder.createBitmap(mMatrix);
                 img.setImageBitmap(mBitmap);
-                BookMessege.setText("Congratulations Your ticket to Culture has been booked Scroll Down");
-//                animateScrollDown();
+                BookMessage.setText("Congratulations Your ticket to Culture has been booked Scroll Down");
 
             }catch (WriterException e){
                 e.printStackTrace();
@@ -70,10 +69,4 @@ public class F_payment extends Fragment {
 
         return view;
     }
-//    upward scroll animation
-//    public void animateScrollDown() {
-//        ObjectAnimator animator = ObjectAnimator.ofFloat(BookMessege, "translationY", -1000f);
-//        animator.setDuration(1000); // Adjust the duration as needed
-//        animator.start();
-//    }
 }

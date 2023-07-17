@@ -27,5 +27,9 @@
     <string name="terms_and_conditions"><![CDATA[Terms & Conditions]]></string>
     <string name="OpenDrawer">Open Navigation drawer</string>
     <string name="CloseDrawer">Close Navigation drawer</string>
+    <string name="user_image">User Image</string>
+    <string name="vikas_02k02_gmail_com">vikas.02k02@gmail.com</string>
+    <string name="current_password">Current Password:</string>
+    <string name="vikas_kumar">Vikas Kumar</string>
 
 </resources>

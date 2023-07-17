@@ -63,8 +63,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:hint="@string/date_input"
-                    android:textColor="@color/black"
-                    android:textColorHint="#C5E1A5" />
+                    android:textColor="@color/red"
+                    android:textColorHint="#FFD180" />
 
             </FrameLayout>
 
