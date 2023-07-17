@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/myAccount"
+        android:title="My Account"
+        android:icon="@drawable/baseline_person_outline_24"/>
+    <item
+        android:id="@+id/myBookings"
+        android:title="My Bookings"
+        android:icon="@drawable/baseline_airplane_ticket_24"/>
+    <item
+        android:id="@+id/notification_setting"
+        android:title="Notification"
+        android:icon="@drawable/baseline_notifications_24"/>
+    <item
+        android:id="@+id/change_password"
+        android:title="Change Password"
+        android:icon="@drawable/baseline_password_24"/>
+    <item
+        android:id="@+id/contact_us"
+        android:title="Contact Us"
+        android:icon="@drawable/baseline_connect_without_contact_24"/>
+    <item
+        android:id="@+id/about_us"
+        android:title="About Us"
+        android:icon="@drawable/baseline_people_24"/>
+    <item
+        android:id="@+id/feedback"
+        android:title="Feedback"
+        android:icon="@drawable/baseline_feedback_24"/>
+    <item
+        android:id="@+id/log_out"
+        android:title="Log Out"
+        android:icon="@drawable/baseline_logout_24"/>
+
+</menu>

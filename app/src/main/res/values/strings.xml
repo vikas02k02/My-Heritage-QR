@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">My Heritage QR</string>
+    <string name="logo">Logo</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="Home_Heading">Book your meeting with culture</string>
+    <string name="place_input">Enter Place</string>
+    <string name="date_input">Select Date</string>
+    <string name="button_availability">Check Availability</string>
+    <string name="available_ticket_text">Available Ticket :</string>
+    <string name="book_now_text">Book now</string>
+    <string name="total_ticket">Total number of Tickets</string>
+    <string name="ticket_range">Between 1-20</string>
+    <string name="btn_proceed_to_book">Proceed To Book</string>
+    <string name="Terms_and_conditions">Warning : Booked Ticket cannot be cancelled . By clicking \"Pay\" I hereby , declare that i have read all the terms and conditions and accept all the Terms and Conditions of My Heritage QR .</string>
+    <string name="btn_pay">Pay</string>
+    <string name="platform_charge">Platform Charge</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="ticket_cost_summary">Ticket cost summary</string>
+    <string name="ticket_fare_for_adult">Ticket fare for adult</string>
+    <string name="home">Home</string>
+    <string name="my_bookings">Bookings</string>
+    <string name="profile">Profile</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_and_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="OpenDrawer">Open Navigation drawer</string>
+    <string name="CloseDrawer">Close Navigation drawer</string>
+
+</resources>
