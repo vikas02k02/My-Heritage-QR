@@ -49,8 +49,10 @@ public class ticket extends AppCompatActivity {
             }else if (id==R.id.about_us) {
                 Toast.makeText(ticket.this, "About us Fragment invoked", Toast.LENGTH_SHORT).show();
             }else if (id==R.id.feedback) {
+                loadFragment(new F_feedback());
                 Toast.makeText(ticket.this, "Feedback Fragment invoked", Toast.LENGTH_SHORT).show();
             }else if (id==R.id.contact_us) {
+                loadFragment(new F_contactUs());
                 Toast.makeText(ticket.this, "Contact Us Fragment invoked", Toast.LENGTH_SHORT).show();
             }else if (id==R.id.log_out) {
                 Toast.makeText(ticket.this, "Log out Successful", Toast.LENGTH_SHORT).show();

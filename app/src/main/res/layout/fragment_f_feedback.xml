@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".F_feedback"
+    android:orientation="vertical">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:gravity="center"
+      android:text="Please rate us to improve your experience"
+      android:textColor="@color/black"
+      android:textSize="20sp" />
+
+  <RatingBar
+      android:id="@+id/ratingBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="20dp"
+      android:progressTint="#FFEB3B"
+      tools:ignore="SpeakableTextPresentCheck" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:layout_gravity="center"
+      android:layout_marginTop="5dp"
+    android:textColor="@color/black"
+    android:id="@+id/tv_rateCount"/>
+
+  <EditText
+      android:id="@+id/et_review"
+      android:layout_width="match_parent"
+      android:layout_height="260dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginEnd="10dp"
+      android:background="@drawable/edit_text_comment_box"
+      android:gravity="center"
+      android:hint="Review"
+      android:textColorHint="#EF3535"
+      android:inputType="textMultiLine"
+      android:minHeight="48dp"
+      android:textColor="@color/black" />
+  <Button
+      android:id="@+id/btn_rateSubmit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Submit"
+      android:textSize="20sp"
+      android:layout_gravity="center"
+      android:layout_marginTop="30dp"/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
