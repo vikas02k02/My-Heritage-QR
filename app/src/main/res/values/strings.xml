@@ -31,5 +31,12 @@
     <string name="vikas_02k02_gmail_com">vikas.02k02@gmail.com</string>
     <string name="current_password">Current Password:</string>
     <string name="vikas_kumar">Vikas Kumar</string>
+    <string name="connect_us_on">Connect Us on</string>
+    <string name="instagram">Instagram</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="gmail">Gmail</string>
+    <string name="copyright_u00a9_2023_vikas02k02">Copyright © 2023 -vikas02k02</string>
+    <string name="please_rate_us_to_improve_your_experience">Please rate us to improve your experience</string>
+    <string name="submit">Submit</string>
 
 </resources>

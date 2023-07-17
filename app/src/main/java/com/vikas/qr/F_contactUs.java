@@ -1,5 +1,6 @@
 package com.vikas.qr;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -16,7 +17,7 @@ import java.util.List;
 
 
 public class F_contactUs extends Fragment {
-    Button Btn_instagram ,Btn_Linkedin , Btn_Gmail;
+    Button Btn_instagram ,btnLinkedIn , Btn_Gmail;
     public F_contactUs() {
         // Required empty public constructor
     }
@@ -36,7 +37,7 @@ public class F_contactUs extends Fragment {
             intent.setPackage("com.instagram.android");
             // ...
             PackageManager packageManager = requireActivity().getPackageManager();
-            List<ResolveInfo> activities = packageManager.queryIntentActivities(intent, 0);
+            @SuppressLint("QueryPermissionsNeeded") List<ResolveInfo> activities = packageManager.queryIntentActivities(intent, 0);
             boolean isIntentSafe = activities.size() > 0;
 
             if (!isIntentSafe) {
@@ -49,24 +50,18 @@ public class F_contactUs extends Fragment {
 
 // Linkedin  contact
         });
-        Button btnLinkedIn = view.findViewById(R.id.btn_LinkedIn);
-        btnLinkedIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String linkedInProfileUrl = "https://www.linkedin.com/in/vikas-kumar-1b6757223";
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(linkedInProfileUrl));
-                startActivity(intent);
-            }
+        btnLinkedIn = view.findViewById(R.id.btn_LinkedIn);
+        btnLinkedIn.setOnClickListener(v -> {
+            String linkedInProfileUrl = "https://www.linkedin.com/in/vikas-kumar-1b6757223";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(linkedInProfileUrl));
+            startActivity(intent);
         });
         Btn_Gmail = view.findViewById(R.id.btn_gmail);
-        Btn_Gmail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String recipientEmail = "vikas.02k02@gmail.com";
-                Intent intent = new Intent(Intent.ACTION_SENDTO);
-                intent.setData(Uri.parse("mailto:" + recipientEmail));
-                startActivity(intent);
-            }
+        Btn_Gmail.setOnClickListener(v -> {
+            String recipientEmail = "vikas.02k02@gmail.com";
+            Intent intent = new Intent(Intent.ACTION_SENDTO);
+            intent.setData(Uri.parse("mailto:" + recipientEmail));
+            startActivity(intent);
         });
 
         return view;

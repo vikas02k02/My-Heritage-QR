@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Connect Us on "
+        android:text="@string/connect_us_on"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -24,32 +24,37 @@
         style="@style/Widget.Material3.Button.OutlinedButton.Icon"
         android:layout_width="330dp"
         android:layout_height="60dp"
-        android:layout_marginTop="40dp"
         android:layout_gravity="center"
-        android:text="Instagram"
-        android:textSize="15sp"
+        android:layout_marginTop="40dp"
+        android:text="@string/instagram"
+        android:textColor="#D81B60"
 
-        android:textColor="@color/red" />
+        android:textSize="15sp"
+        tools:ignore="VisualLintButtonSize" />
+
     <Button
         android:id="@+id/btn_LinkedIn"
         style="@style/Widget.Material3.Button.OutlinedButton.Icon"
         android:layout_width="330dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:text="LinkedIn"
+        android:layout_marginTop="20dp"
+        android:text="@string/linkedin"
+        android:textColor="#1976D2"
         android:textSize="15sp"
-        android:textColor="#2196F3"/>
+        tools:ignore="VisualLintButtonSize" />
+
     <Button
         android:id="@+id/btn_gmail"
         style="@style/Widget.Material3.Button.OutlinedButton.Icon"
         android:layout_width="330dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:text="Gmail"
+        android:layout_marginTop="20dp"
+        android:text="@string/gmail"
+        android:textColor="#D81B60"
         android:textSize="15sp"
-        android:textColor="#E91E63"/>
+        tools:ignore="VisualLintButtonSize" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -57,13 +62,14 @@
         android:layout_height="250dp"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Copyright \u00A9 2023 -vikas02k02"
+        android:text="@string/copyright_u00a9_2023_vikas02k02"
         android:layout_marginBottom="5dp"/>
 
 

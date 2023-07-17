@@ -1,5 +1,6 @@
 package com.vikas.qr;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -25,6 +26,7 @@ public class F_feedback extends Fragment {
         // Required empty public constructor
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -33,25 +35,19 @@ public class F_feedback extends Fragment {
         Tv_rateCount=view.findViewById(R.id.tv_rateCount);
         Et_review=view.findViewById(R.id.et_review);
         Btn_rate=view.findViewById(R.id.btn_rateSubmit);
-        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-            @Override
-            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                rateValue=ratingBar.getRating();
-                Tv_rateCount.setText(rateValue+"/5");
-            }
+        ratingBar.setOnRatingBarChangeListener((ratingBar, rating, fromUser) -> {
+            rateValue=ratingBar.getRating();
+            Tv_rateCount.setText(rateValue+"/5");
         });
-        Btn_rate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(ratingBar.getRating()==0.0){
-                    Toast.makeText(getActivity(), "Please Rate Us to submit", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Toast.makeText(getActivity(), "Thanks For Your Feedback", Toast.LENGTH_LONG).show();
-                    ratingBar.setRating(0);
-                    Tv_rateCount.setText("");
-                    Et_review.setText("");
-                }
+        Btn_rate.setOnClickListener(v -> {
+            if(ratingBar.getRating()==0.0){
+                Toast.makeText(getActivity(), "Please Rate Us to submit", Toast.LENGTH_SHORT).show();
+            }
+            else{
+                Toast.makeText(getActivity(), "Thanks For Your Feedback", Toast.LENGTH_LONG).show();
+                ratingBar.setRating(0);
+                Tv_rateCount.setText("");
+                Et_review.setText("");
             }
         });
         return view;

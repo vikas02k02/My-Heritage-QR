@@ -13,7 +13,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="30dp"
       android:gravity="center"
-      android:text="Please rate us to improve your experience"
+      android:text="@string/please_rate_us_to_improve_your_experience"
       android:textColor="@color/black"
       android:textSize="20sp" />
 
@@ -37,21 +37,23 @@
       android:id="@+id/et_review"
       android:layout_width="match_parent"
       android:layout_height="260dp"
-      android:layout_marginTop="30dp"
       android:layout_marginStart="10dp"
+      android:layout_marginTop="30dp"
       android:layout_marginEnd="10dp"
       android:background="@drawable/edit_text_comment_box"
       android:gravity="center"
       android:hint="Review"
-      android:textColorHint="#EF3535"
+      android:importantForAutofill="no"
       android:inputType="textMultiLine"
       android:minHeight="48dp"
-      android:textColor="@color/black" />
+      android:textColor="@color/black"
+      android:textColorHint="#D32F2F"
+      tools:ignore="HardcodedText,VisualLintTextFieldSize" />
   <Button
       android:id="@+id/btn_rateSubmit"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Submit"
+      android:text="@string/submit"
       android:textSize="20sp"
       android:layout_gravity="center"
       android:layout_marginTop="30dp"/>
