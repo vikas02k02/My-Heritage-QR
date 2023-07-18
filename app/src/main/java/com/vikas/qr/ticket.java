@@ -39,7 +39,7 @@ public class ticket extends AppCompatActivity {
                 loadFragment(new F_home());
                 Toast.makeText(ticket.this, "Home Fragment invoked", Toast.LENGTH_SHORT).show();
             } else if (id==R.id.myAccount) {
-//                    loadFragment(new F_myAccount());
+                    loadFragment(new F_myAccount());
                 Toast.makeText(ticket.this, "My Account Fragment invoked", Toast.LENGTH_SHORT).show();
             }else if (id==R.id.notification_setting) {
                 Toast.makeText(ticket.this, "Notification Fragment invoked", Toast.LENGTH_SHORT).show();
@@ -47,6 +47,7 @@ public class ticket extends AppCompatActivity {
                 loadFragment(new F_changePassword());
                 Toast.makeText(ticket.this, "Password Fragment invoked", Toast.LENGTH_SHORT).show();
             }else if (id==R.id.about_us) {
+                loadFragment(new F_aboutUs());
                 Toast.makeText(ticket.this, "About us Fragment invoked", Toast.LENGTH_SHORT).show();
             }else if (id==R.id.feedback) {
                 loadFragment(new F_feedback());

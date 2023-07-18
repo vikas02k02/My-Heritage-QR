@@ -45,6 +45,9 @@ public class F_changePassword extends Fragment {
                 Et_newPassword.setError("Same as current Password");
             } else {
                 data.setPassword(newP);
+                Et_currentPassword.setText("");
+                Et_newPassword.setText("");
+                Et_confirmPassword.setText("");
                 Toast.makeText(getActivity(),"Password Changed Successfully",Toast.LENGTH_LONG).show();
             }
         });

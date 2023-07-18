@@ -38,5 +38,7 @@
     <string name="copyright_u00a9_2023_vikas02k02">Copyright © 2023 -vikas02k02</string>
     <string name="please_rate_us_to_improve_your_experience">Please rate us to improve your experience</string>
     <string name="submit">Submit</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="version_1_0">Version 1.0</string>
 
 </resources>
