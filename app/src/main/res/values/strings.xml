@@ -40,5 +40,6 @@
     <string name="submit">Submit</string>
     <string name="about_us">ABOUT US</string>
     <string name="version_1_0">Version 1.0</string>
+    <string name="pause_all">Pause All</string>
 
 </resources>

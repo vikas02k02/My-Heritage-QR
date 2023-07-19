@@ -41,9 +41,9 @@ public class ticket extends AppCompatActivity {
             } else if (id==R.id.myAccount) {
                     loadFragment(new F_myAccount());
                 Toast.makeText(ticket.this, "My Account Fragment invoked", Toast.LENGTH_SHORT).show();
-            }else if (id==R.id.myAccount) {
-                loadFragment(new F_myAccount());
-                Toast.makeText(ticket.this, "My Account Fragment invoked", Toast.LENGTH_SHORT).show();
+            }else if (id==R.id.notification_setting) {
+                loadFragment(new F_notification());
+                Toast.makeText(ticket.this, "Notification Fragment invoked", Toast.LENGTH_SHORT).show();
             }else if (id==R.id.myBookings) {
                 loadFragment(new F_myBooking());
                 Toast.makeText(ticket.this, "My Bookings Fragment invoked", Toast.LENGTH_SHORT).show();

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".F_notification">
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchPause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pause_all"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_email"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Email Notification"
+        android:textColor="#D81B60"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+    <Button
+        android:id="@+id/btn_phone"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Phone Notification"
+        android:textColor="#D81B60"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo"
+        android:importantForAccessibility="no" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/version_1_0"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+
+
+</LinearLayout>

@@ -62,7 +62,7 @@ public class F_home extends Fragment {
             final Calendar calendar = Calendar.getInstance();
             int mYear = calendar.get(Calendar.YEAR);
             int mMonth=calendar.get(Calendar.MONTH);
-            int mDay=calendar.get(Calendar.DAY_OF_MONTH);
+            int mDay=calendar.get(Calendar.DAY_OF_MONTH)+1;
             String CurrentDate=mDay+"/"+(mMonth+1)+"/"+mYear;
             Tv_date.setText(CurrentDate);
             Date dateFormat1 ;
@@ -72,6 +72,7 @@ public class F_home extends Fragment {
                 SimpleDateFormat dateFormat2=new SimpleDateFormat("dd-MM-yyyy",Locale.UK);
                 assert dateFormat1 != null;
                 datetext =dateFormat2.format(dateFormat1);
+                Toast.makeText(getActivity(),"Only next day ticket could be booked now in this version",Toast.LENGTH_LONG).show();
 
             } catch (ParseException e) {
                 throw new RuntimeException(e);
