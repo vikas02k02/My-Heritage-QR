@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".customList">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/li_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Place" />
+
+    <TextView
+        android:id="@+id/li_tourist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+        android:text="Total Tourist"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/li_journeyDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Journey Date" />
+
+
+
+
+</LinearLayout>

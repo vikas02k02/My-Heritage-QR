@@ -57,6 +57,7 @@ public class F_payment extends Fragment {
                 BarcodeEncoder mEncoder = new BarcodeEncoder();
                 Bitmap mBitmap = mEncoder.createBitmap(mMatrix);
                 img.setImageBitmap(mBitmap);
+                data.setBitmap(mBitmap);
                 BookMessage.setText("Congratulations Your ticket to Culture has been booked Scroll Down");
 
             }catch (WriterException e){

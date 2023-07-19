@@ -1,5 +1,7 @@
 package com.vikas.qr;
 
+import android.graphics.Bitmap;
+
 public class data {
     static String Password ="admin";
     static String Username ="admin";
@@ -8,7 +10,10 @@ public class data {
     static String Phone="6203124802";
     static boolean maleRB =true;
     static boolean femaleRB =false;
-
+    static String place="";
+    static String tdate="";
+    static String tTicket="";
+    static Bitmap bitmap;
     public static String  getPassword(){
         return Password;
     }
@@ -28,6 +33,10 @@ public class data {
     public static String  getPhone(){
         return Phone;
     }
+    public static String getPlace(){return  place;}
+    public static String getTdate(){return  tdate;}
+    public static String gettTicket(){return tTicket;}
+    public static Bitmap getBitmap(){return bitmap;}
 
     public static void setPassword(String password){
         Password=password;
@@ -48,5 +57,9 @@ public class data {
     public static void  setFemaleStatus(boolean female){
         femaleRB= female;
     }
+    public static void setPlace(String pla){place=pla;}
+    public static void setDate(String da){tdate =da;}
+    public static void settTicket(String ti){tTicket=ti;}
+    public static void setBitmap(Bitmap bt){bitmap=bt;}
 
 }

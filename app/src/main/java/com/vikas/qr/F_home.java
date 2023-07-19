@@ -147,6 +147,9 @@ public class F_home extends Fragment {
                 } else if (date.length()==0) {
                     Tv_date.setError("Select Date");
                 } else {
+                    data.setPlace(place);
+                    data.setDate(date);
+                    data.settTicket(ad);
                     F_payment pay = new F_payment();
 
                     Bundle bundle = new Bundle();
