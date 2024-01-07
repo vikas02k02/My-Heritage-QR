@@ -5,8 +5,8 @@ import android.graphics.Bitmap;
 public class data {
     static String Password ="admin";
     static String Username ="admin";
-    static String Name ="Vikas Kumar";
-    static String Email ="vikas.02k02@gmail.com";
+    static String Name ="My_Heritage-QR";
+    static String Email ="my_heritage_qr@gmail.com";
     static String Phone="6203124802";
     static boolean maleRB =true;
     static boolean femaleRB =false;

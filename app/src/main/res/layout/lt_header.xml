@@ -10,10 +10,11 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="119dp"
-        android:layout_height="67dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/pic"
+        app:srcCompat="@drawable/logo"
+        android:background="@color/white"
         android:layout_marginTop="5dp"
         android:importantForAccessibility="no" />
 

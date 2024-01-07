@@ -31,7 +31,7 @@ public class F_contactUs extends Fragment {
         // Open only in the Instagram
         Btn_instagram=view.findViewById(R.id.btn_Instagram);
         Btn_instagram.setOnClickListener(v -> {
-            String username = "its.____vikas";
+            String username = "amitpandey751";
             Uri uri = Uri.parse("http://instagram.com/_u/" + username);
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             intent.setPackage("com.instagram.android");
@@ -52,13 +52,13 @@ public class F_contactUs extends Fragment {
         });
         btnLinkedIn = view.findViewById(R.id.btn_LinkedIn);
         btnLinkedIn.setOnClickListener(v -> {
-            String linkedInProfileUrl = "https://www.linkedin.com/in/vikas-kumar-1b6757223";
+            String linkedInProfileUrl = "https://www.linkedin.com/in/amit-pandey-2a0293246";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(linkedInProfileUrl));
             startActivity(intent);
         });
         Btn_Gmail = view.findViewById(R.id.btn_gmail);
         Btn_Gmail.setOnClickListener(v -> {
-            String recipientEmail = "vikas.02k02@gmail.com";
+            String recipientEmail = "amitp152002@gmail.com";
             Intent intent = new Intent(Intent.ACTION_SENDTO);
             intent.setData(Uri.parse("mailto:" + recipientEmail));
             startActivity(intent);
